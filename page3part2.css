@@ -1,0 +1,90 @@
+.selectedHomeIcons {
+    font-size: 30px;
+}
+
+.selectedHouseDetails h3{
+    font-size: 20px;
+}
+
+.selectedHouseDetails h5 {
+    font-size: 15px;
+}
+.selectedHouseDetails span {
+    font-size: 10px;
+    color: grey;
+}
+
+.floating {
+    height: 200px;
+    border-radius: 15px;
+    margin-top: 50px;
+    position: sticky;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.599)
+}
+
+.starIcon {
+    color: rgb(226, 43, 226);
+    font-size: 8px;
+}
+
+.floatingFirstRow span:first-child {
+
+    font-size: 13px;
+}
+
+
+
+
+.inputContainer input {
+    border: none;
+    
+}
+
+
+
+.inputContainer {
+    width: 200px;
+    height: 80px;
+    border: 2px solid black;
+    border-radius: 15px;
+
+
+}
+.firstTwoInputs {
+    position: relative;
+}
+
+.firstTwoInputs::after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 0;
+    background-color: black;
+    height: 1px;
+    width: 100%;
+
+    
+}
+
+input[type="date"] {
+    font-size: 12px; /* Imposta la dimensione del font */
+    padding: 5px; /* Imposta il padding per rendere il campo input più piccolo */
+    box-sizing: border-box;
+}    
+
+    
+
+input[type="date"]:first-of-type {
+    border-right: 1px solid black;
+
+}
+
+.cancelBooking {
+    margin-top: 8px;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(220, 43, 226);
+    font-size: 12px;
+}
+  
