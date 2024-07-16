@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
-        </style>
+      @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+    </style>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
@@ -20,8 +20,10 @@
     <link rel="stylesheet" href="page3part2.css" />
   </head>
   <body>
+    <!--SEZIONE DETTAGLI CASA SELEZIONATA -->
     <section class="selectedHouseDetails container-fluid">
       <div class="row d-flex align-items-center justify-content-center">
+        <!--PARTE SX SEZIONE -->
         <div class="col-12 col-md-6">
           <div class="row">
             <div
@@ -128,9 +130,8 @@
               </div>
             </div>
 
-            <div
-              class="rightHouseSection h-100 col-12 col-md-5 d-flex align-items-start justify-content-center p-5"
-            >
+             <!--PARTE DX SEZIONE CON FLOATING ITEM -->
+            <div class="rightHouseSection col-12 col-md-5 p-5">
               <div
                 class="floating w-100 d-flex flex-column align-items-center justify-content-start"
               >
@@ -161,20 +162,16 @@
               </div>
             </div>
           </div>
+           <!--SEZIONE INPUT INFERIORE -->
           <div
-            class="row d-flex flex-column align-items-start justify-content-center px-2"
+            class="footerInputs row d-flex flex-column align-items-start justify-content-center px-2 mt-5"
           >
+          <!--primi due input -->
             <div class="col-12 col-md-10">
-              <div class="row lastPageLastRow">
+              <div class="row d-flex align-items-center justify-content-start">
                 <div class="col-10">
-                  <div class="d-flex align-items-center justify-content-start">
-                    <div
-                      class="d-flex flex-column align-items-start justify-content-center w-100"
-                    >
-                      <h5>Name</h5>
-                      <input class="nameInput w-100" type="text" />
-                    </div>
-                  </div>
+                  <h5>Name</h5>
+                  <input class="nameInput w-100" type="text" />
                 </div>
 
                 <div class="col-2">
@@ -188,8 +185,9 @@
                   </div>
                 </div>
 
+                 <!--ultimo input -->
                 <div class="col-12">
-                  <div class="d-flex align-items-center justify-content-start">
+                  <div class="d-flex align-items-center justify-content-start mt-3">
                     <div
                       class="d-flex flex-column align-items-start justify-content-center w-100"
                     >
@@ -201,39 +199,52 @@
               </div>
             </div>
           </div>
+           <!--sezione recensioni -->
           <div
-            class="row d-flex align-items-center justify-content-center mt-4"
+            class="footerReviews row d-flex align-items-center justify-content-center mt-4"
           >
-          <div class="col-12 col-md-6 d-flex flex-column align-items-start justify-content-around">
-            <div class="d-flex align-items-center gap-3">
-              <div class="userImg rounded-circle">
-                <img class="w-100 h-100 object-fit-cover" src="./assets/user.avif" alt="">
+            <div
+              class="col-12 col-md-6 d-flex flex-column align-items-start justify-content-around"
+            >
+              <div class="d-flex align-items-center gap-3">
+                <div class="userImg rounded-circle">
+                  <img
+                    class="w-100 h-100 object-fit-cover"
+                    src="./assets/user.avif"
+                    alt=""
+                  />
+                </div>
+                <div class="d-flex flex-column text-start">
+                  <h6>Noemi</h6>
+                  <span>Jan 2021</span>
+                </div>
               </div>
-              <div class="d-flex flex-column text-start">
-                <h6>Noemi</h6>
-                <span>Jan 2021</span>
+              <p class="text-start mt-2">
+                Contrary to the other reviews, I was cold and couldn't figure
+                out how to turn on the heating... Otherwise, amazing house
+              </p>
+            </div>
+
+            <div
+              class="col-12 col-md-6 d-flex flex-column align-items-start justify-content-around gap-2"
+            >
+              <div class="d-flex align-items-center gap-3">
+                <div class="userImg rounded-circle">
+                  <img
+                    class="w-100 h-100 object-fit-cover"
+                    src="./assets/user.avif"
+                    alt=""
+                  />
+                </div>
+                <div class="d-flex flex-column text-start">
+                  <h6>Enrico</h6>
+                  <span>Jan 2021</span>
+                </div>
               </div>
+              <p class="text-start mt-2">
+                Amazing place. I've been here with my daughter to take pictures and <br> we were not disappointed
+              </p>
             </div>
-            <div class="text-start mt-2">
-              Contrary to the other reviews, I was cold and couldn't figure out how to turn on the heating... Otherwise, amazing house
-            </div>
-          </div>
-          
-          <div class="col-12 col-md-6 d-flex flex-column align-items-start justify-content-around gap-2">
-            <div class="d-flex align-items-center gap-3">
-              <div class="userImg rounded-circle">
-                <img class="w-100 h-100 object-fit-cover" src="./assets/user.avif" alt="">
-              </div>
-              <div class="d-flex flex-column text-start">
-                <h6>Noemi</h6>
-                <span>Jan 2021</span>
-              </div>
-            </div>
-            <div class="text-start mt-2">
-              Contrary to the other reviews, I was cold and couldn't figure out how to turn on the heating... Otherwise, amazing house
-            </div>
-          </div>
-          
           </div>
         </div>
       </div>
