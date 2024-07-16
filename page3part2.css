@@ -1,3 +1,11 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;;
+}
+
+
 .selectedHomeIcons {
     font-size: 30px;
 }
@@ -14,17 +22,26 @@
     color: grey;
 }
 
+.rightHouseSection {
+    position: relative;
+}
+
 .floating {
-    height: 200px;
+    height: 250px;
     border-radius: 15px;
-    margin-top: 50px;
     position: sticky;
+    min-width: 280px;
+    top: 50px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.599)
 }
 
 .starIcon {
     color: rgb(226, 43, 226);
     font-size: 8px;
+}
+
+.floatingFirstRow {
+    width: 90%;
 }
 
 .floatingFirstRow span:first-child {
@@ -35,25 +52,39 @@
 
 
 
-.inputContainer input {
-    border: none;
-    
-}
 
 
 
 .inputContainer {
-    width: 200px;
-    height: 80px;
-    border: 2px solid black;
-    border-radius: 15px;
+    width: 80%;
+    height: 90px;
+    box-sizing: border-box;
+   }
 
-
+.inputContainer input {
+    border: 0.5px solid grey;
 }
+   
 .firstTwoInputs {
     position: relative;
+    width: 100%;
 }
 
+.firstTwoInputs input:first-of-type {
+    border-radius: 15px 0 0 0 ;
+    border-bottom: 0px;
+}
+
+.firstTwoInputs input:last-of-type {
+    border-radius: 0 15px 0 0 ;
+    border-bottom: 0px;
+   
+}
+
+.lastInput {
+    border-radius: 0 0 15px 15px;
+;
+}
 .firstTwoInputs::after {
     position: absolute;
     content: "";
@@ -66,9 +97,13 @@
     
 }
 
+input {
+    outline: none;
+   
+}
+
 input[type="date"] {
     font-size: 12px; /* Imposta la dimensione del font */
-    padding: 5px; /* Imposta il padding per rendere il campo input più piccolo */
     box-sizing: border-box;
 }    
 
@@ -81,10 +116,31 @@ input[type="date"]:first-of-type {
 
 .cancelBooking {
     margin-top: 8px;
-    width: 200px;
-    height: 30px;
-    border-radius: 10px;
-    background-color: rgb(220, 43, 226);
+    width: 80%;
+    height: 40px;
+    border-radius: 15px;
+    background-color: 
+    rgb(255, 56, 92)
+    ;
     font-size: 12px;
+    font-weight: bold;
 }
+
+.reviewsInput {
+    height: 80px;
+}
+.userImg {
+    width: 50px; /* Dimensione desiderata */
+    height: 50px; /* Dimensione desiderata */
+    border-radius: 50%; /* Rende il div tondo */
+    overflow: hidden; /* Nasconde le parti dell'immagine che escono dal div */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   
+
+  .lastPageLastRow h5 {
+    font-size: 13px;
+    
+  }
