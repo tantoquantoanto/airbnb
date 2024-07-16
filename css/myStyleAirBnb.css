@@ -1,0 +1,49 @@
+:root{
+    --big-search-button_color:#6A6A6A;
+}
+.logo{
+    height: 40px;
+}
+.custom-list-nav{
+    list-style: none;
+}
+.custom-list-nav a{
+    color: white;
+    text-decoration: none;
+}
+input {
+    color:gray;
+}
+/*
+
+.custom-size-icon-header{
+    height: 23px;
+    width: 35px;
+}
+
+.film-card{
+    width: 250px;
+    height: 200px;
+    transition: transform 0.3s ease-in-out;
+}
+.film-card:hover{
+   transform: scale(1.1);
+}
+
+.swiper-slide{
+    width: 250px !important;
+    
+}
+.swiper-button-next, 
+.swiper-button-prev{
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.hide-section{
+    visibility: hidden;
+}
+    */
+
+
