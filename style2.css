@@ -13,7 +13,7 @@
 }
 
 main {
-    height: calc(100vh - 99px - 361px);
+    min-height: calc(100vh - 99px - 361px);
 }
 
 #result-number {
@@ -32,6 +32,11 @@ main {
     border: none;
     outline: none;
     border-radius: 50%;
+}
+
+.card-img-top {
+    width: 230px;
+    height: 160px;
 }
 
 footer {
