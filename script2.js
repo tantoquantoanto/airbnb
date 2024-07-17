@@ -73,6 +73,9 @@ const createCard = (cardData, divToAppend) => {
     cardBody.append(divStarTitle, durationP, descriptionCard);
     card.append(cardImg, cardBody);
     divToAppend.appendChild(card);
+    card.addEventListener("click", () => {
+        window.location.href = "page3.html"
+    })
 }
 
 arrayCards.holidays.forEach(card => {
