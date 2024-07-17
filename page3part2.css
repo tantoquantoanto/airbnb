@@ -28,6 +28,7 @@
 
 .floating {
     height: 230px;
+    width: 250px;
     border-radius: 15px;
     position: sticky;
     min-width: 280px;
