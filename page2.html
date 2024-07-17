@@ -1,32 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./css/style2.css">
     <title>Airbnb</title>
 </head>
+
 <body>
     <header>
-        <nav class="container py-4">
-            <div class="row">
-                <div class="col">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <a href="index.html" class="logo">
-                            <img src="assets/logo-pink.png" alt="airbnb logo" class="w-100">
-                        </a>
-                        <div class="d-flex justify-content-end align-items-center gap-3">
-                            <div>Become a host</div>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand logo" href="index.html">
+                    <img src="assets/logo-pink.png" alt="airbnb logo" class="w-100">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="vh-100 offcanvas offcanvas-start" id="offcanvasNavbar" tabindex="-1"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-body h-100">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 flex-row align-items-center justify-content-between">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Become a host</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="bi bi-globe2"></i></a>
+                            </li>
+                            <li class="nav-item" id="account">
+                                <a class="nav-link" href="#"><i class="bi bi-person-circle"></i></a>
+                            </li>
+                            <button type="button" class="btn-close d-block d-md-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </ul>
+                        <div class="h-100 pt-5 d-flex flex-column justify-content-between d-md-none">
                             <div>
-                                <i class="bi bi-globe2"></i>
+                                <div class="fw-bold lh-lg">Assistenza</div>
+                                <ul class="list-unstyled lh-lg">
+                                    <li>Centro Assistenza</li>
+                                    <li>AirCover</li>
+                                    <li>Antidiscriminazione</li>
+                                    <li>Supporto alla disabilità</li>
+                                    <li>Opzioni di cancellazione</li>
+                                    <li>Segnala problema nel quartiere</li>
+                                </ul>
+                                <div class="fw-bold lh-lg">Ospitare</div>
+                                <ul class="list-unstyled lh-lg">
+                                    <li>Apri un Airbnb</li>
+                                    <li>AirCover per gli host</li>
+                                    <li>Risorse per gli host</li>
+                                    <li>Forum della community</li>
+                                    <li>Ospitare responsabilmente</li>
+                                    <li>Partecipa a una lezione gratuita sull'ospitalità</li>
+                                </ul>
+                                <div class="fw-bold lh-lg">Airbnb</div>
+                                <ul class="list-unstyled lh-lg">
+                                    <li>Newsroom</li>
+                                    <li>Nuove funzionalità</li>
+                                    <li>Opportunità di lavoro</li>
+                                    <li>Investitori</li>
+                                    <li>Gift card</li>
+                                    <li>Soggiorni con Airbnb.org</li>
+                                </ul>
                             </div>
-                            <div id="menu">
-                                <i class="bi bi-list"></i>
-                            </div>
-                            <div id="account">
-                                <i class="bi bi-person-circle"></i>
+
+                            <div class="pt-5 d-flex flex-wrap justify-content-between align-items-baseline">
+                                <ul class="list-unstyled">
+                                    <li class="text-secondary">©2024 Epibnb, Inc.</li>
+                                    <li>
+                                        <a href="#" class="text-decoration-none text-secondary">Privacy</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-decoration-none text-secondary">Termini</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-decoration-none text-secondary">Mappa del sito</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-decoration-none text-secondary">Dettagli
+                                            dell'azienda</a>
+                                    </li>
+                                </ul>
+                                <ul class="w-100 d-flex flex-wrap justify-content-between align-items-center gap-3 list-unstyled">
+                                    <li class="d-flex align-items-center gap-1">
+                                        <i class="bi bi-globe2"></i>
+                                        <div>Italiano (IT)</div>
+                                    </li>
+                                    <li class="d-flex align-items-center gap-1">
+                                        <i class="bi bi-currency-euro"></i>
+                                        <div>EUR</div>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-decoration-none text-secondary">
+                                            <i class="bi bi-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-decoration-none text-secondary">
+                                            <i class="bi bi-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-decoration-none text-secondary">
+                                            <i class="bi bi-instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -39,7 +122,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div id="result-number">10 stays</div>
+                    <div id="result-number"></div>
                 </div>
                 <div class="col-12">
                     <div class="d-flex justify-content-start align-items-center gap-2">
@@ -55,19 +138,23 @@
                     </div>
                 </div>
                 <div class="col-12 mb-4">
-                    <div class="mt-3 text-secondary">Enter dates and number of guests to see the total price per night.</div>
+                    <div class="mt-3 text-secondary">Enter dates and number of guests to see the total price per night.
+                    </div>
                 </div>
                 <div class="col-12">
-                    <div class="mt-3 text-secondary">Review COVID-19 travel restrictions before you book. Learn more</div>
+                    <div class="mt-3 text-secondary">Review COVID-19 travel restrictions before you book. Learn more
+                    </div>
                 </div>
             </div>
-            <div class="row mt-3 mb-2">
-                <div id="cards-container" class="d-flex flex-wrap justify-content-start justify-content-lg-evenly align-items-center gap-3"></div>
+            <div class="row mt-3 mb-2 px-2 px-md-0">
+                <div id="cards-container"
+                    class="d-flex flex-wrap justify-content-start justify-content-lg-evenly align-items-center gap-3">
+                </div>
             </div>
         </div>
     </main>
 
-    <footer class="d-none d-md-block mt-5">
+    <footer class="fixed-bottom d-none d-md-block mt-5">
         <div class="container">
             <div class="row p-4">
                 <div class="col-4">
@@ -152,10 +239,15 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="script2.js"></script>
 </body>
+
 </html>

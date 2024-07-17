@@ -44,6 +44,9 @@ const arrayCards =  {
 
 
 const divSection = document.getElementById("cards-container");
+const resultQt = document.getElementById("result-number");
+
+resultQt.innerText = `${arrayCards.holidays.length} stays`;
 
 const createCard = (cardData, divToAppend) => {
     const flexBox = document.createElement("div");
