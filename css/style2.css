@@ -1,3 +1,7 @@
+body {
+    min-height: 100vh;
+}
+
 .logo {
     width: 102px;
     object-fit: cover;
