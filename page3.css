@@ -1,0 +1,218 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;;
+}
+
+
+.imgLogo {
+    object-fit: cover;
+    width: 102px;
+}
+
+.menuUser div:first-child ion-icon {
+    font-size: 20px;
+
+}
+.menuUser div:last-child ion-icon {
+    font-size: 30px;
+
+}
+
+.ciao {
+    border-radius: 10px 0 0 10px;
+}
+.banane div:nth-child(2) img {
+    border-radius: 0 10px 0 0;
+
+
+}
+
+.banane div:last-child img {
+    border-radius: 0 0 10px 0;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .ciao {
+        border-radius: 10px 10px 0 0;
+    }
+    .banane div:nth-child(3) img {
+        border-radius: 0 0 0 10px;
+
+
+    }
+
+    .banane div:last-child img {
+        border-radius: 0 0 10px 0;
+    }
+
+    .banane div:nth-child(2) img {
+        border-radius: 0;
+
+    }    
+}
+
+h2 {
+    font-size: 1rem;
+}
+
+.underTitle p::first-letter {
+    font-weight: bold;
+}
+
+.underTitle {
+    font-size: 14px;
+}
+
+
+
+.selectedHomeIcons {
+    font-size: 30px;
+}
+
+.selectedHouseDetails h3{
+    font-size: 20px;
+}
+
+.selectedHouseDetails h5 {
+    font-size: 15px;
+}
+.selectedHouseDetails span {
+    font-size: 10px;
+    color: grey;
+}
+
+.rightHouseSection {
+    position: relative;
+}
+
+.floating {
+    height: 280px;
+    border-radius: 15px;
+    position: sticky;
+    min-width: 280px;
+    top: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.599)
+}
+
+.starIcon {
+    color: rgb(226, 43, 226);
+    font-size: 8px;
+}
+
+.floatingFirstRow {
+    width: 90%;
+}
+
+.floatingFirstRow span:first-child {
+
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+.inputContainer {
+    width: 80%;
+    height: 90px;
+    box-sizing: border-box;
+   }
+
+.inputContainer input {
+    border: 0.5px solid grey;
+}
+   
+.firstTwoInputs {
+    position: relative;
+    width: 100%;
+}
+
+.firstTwoInputs input:first-of-type {
+    border-radius: 15px 0 0 0 ;
+    border-bottom: 0px;
+}
+
+.firstTwoInputs input:last-of-type {
+    border-radius: 0 15px 0 0 ;
+    border-bottom: 0px;
+   
+}
+
+.lastInput {
+    border-radius: 0 0 15px 15px;
+;
+}
+.firstTwoInputs::after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 0;
+    background-color: black;
+    height: 1px;
+    width: 100%;
+
+    
+}
+
+input {
+    outline: none;
+   
+}
+
+input[type="date"] {
+    font-size: 12px; /* Imposta la dimensione del font */
+    box-sizing: border-box;
+}    
+
+    
+
+input[type="date"]:first-of-type {
+    border-right: 1px solid black;
+
+}
+
+.cancelBooking {
+    margin-top: 8px;
+    width: 80%;
+    height: 40px;
+    border-radius: 15px;
+    background-color: 
+    rgb(255, 56, 92)
+    ;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.reviewsInput {
+    height: 80px;
+}
+
+.userImg {
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+ .footerInputs h5{
+    font-size: 13px;
+ }
+
+ .footerReviews h6{
+  font-size: 13px;
+  font-weight: bold;
+ }
+
+ .footerReviews p{
+    font-size: 11px;
+    
+   }
