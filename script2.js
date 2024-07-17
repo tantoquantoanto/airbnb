@@ -46,13 +46,21 @@ const arrayCards =  {
 const divSection = document.getElementById("cards-container");
 
 const createCard = (cardData, divToAppend) => {
+    const flexBox = document.createElement("div");
+    flexBox.setAttribute("class", "d-flex");
     const card = document.createElement("div");
     card.setAttribute("class", "card border-0");
     const cardImg = document.createElement("img");
-    cardImg.setAttribute("class", "card-img-top rounded-4 object-fit-cover");
+    cardImg.setAttribute("class", "card-img-top rounded-4 object-fit-cover banana");
     cardImg.setAttribute("src", cardData.img);
     const cardBody = document.createElement("div");
-    cardBody.setAttribute("class", "card-body p-0 pt-1 border-0");
+    cardBody.setAttribute("class", "card-body pt-1 border-0");
+    createCardBody(cardData, cardBody)
+    card.append(cardImg, cardBody);
+    flexBox.appendChild(card);
+    divToAppend.appendChild(flexBox);
+}
+const createCardBody = (cardData, cardBody) =>{
     const divStarTitle = document.createElement("div");
     divStarTitle.setAttribute("class", "d-flex gap-2 align-items-center");
     const iconStar = document.createElement("ion-icon")
@@ -71,12 +79,8 @@ const createCard = (cardData, divToAppend) => {
     descriptionCard.textContent = cardData.description;
     divStarTitle.append(iconStar, cardTitle, ratingCard);
     cardBody.append(divStarTitle, durationP, descriptionCard);
-    card.append(cardImg, cardBody);
-    divToAppend.appendChild(card);
-    card.addEventListener("click", () => {
-        window.location.href = "page3.html"
-    })
 }
+
 
 arrayCards.holidays.forEach(card => {
     createCard(card, divSection)
