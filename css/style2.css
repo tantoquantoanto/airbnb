@@ -1,0 +1,65 @@
+.logo {
+    width: 102px;
+    object-fit: cover;
+}
+
+#menu i {
+    font-size: 1.5em;
+}
+
+#account i {
+    font-size: 2em;
+    color: grey;
+}
+
+main {
+    min-height: calc(100vh - 99px - 361px);
+}
+
+#result-number {
+    color: grey;
+    font-size: .8rem;
+}
+
+#plus {
+    color: white;
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    font-size: 1.3rem;
+    line-height: 15px;
+    padding: auto;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+}
+
+.card-img-top {
+    width: 230px;
+    height: 160px;
+}
+
+.card {
+    transition: transform 0.3s ease-in-out;
+}
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #F7F7F7;
+}
+
+#footer-nav li {
+    margin-right: 20px;
+    position: relative;
+}
+
+#footer-nav li:not(li:first-of-type)::before {
+    content: "•";
+    color: grey;
+    position: absolute;
+    left: -10px;
+    transform: translateX(-50%);
+}
