@@ -55,7 +55,7 @@
 }
 
 h2 {
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .underTitle p::first-letter {
@@ -108,7 +108,11 @@ h2 {
 
 .floatingFirstRow span:first-child {
 
-    font-size: 13px;
+    font-size: 1.22rem; /*Grazie Anass*/
+}
+
+.floatingFirstRow span:last-child {
+    font-size: .7rem;
 }
 
 
@@ -216,3 +220,20 @@ input[type="date"]:first-of-type {
     font-size: 11px;
     
    }
+
+   footer {
+    background-color: #F7F7F7;
+}
+
+#footer-nav li {
+    margin-right: 20px;
+    position: relative;
+}
+
+#footer-nav li:not(li:first-of-type)::before {
+    content: "•";
+    color: grey;
+    position: absolute;
+    left: -10px;
+    transform: translateX(-50%);
+}

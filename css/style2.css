@@ -51,6 +51,10 @@ main {
     transform: scale(1.1);
 }
 
+.offcanvas-body {
+    max-height: 100dvh;
+}
+
 footer {
     background-color: #F7F7F7;
 }

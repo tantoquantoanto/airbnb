@@ -12,117 +12,119 @@
 </head>
 
 <body>
-    <nav class="bg-black h-auto">
-        <div class="container-fluid Black d-flex align-items-center justify-content-between navbar-expand-lg px-5">
-            <!-- navbar left -->
-            <div class="d-flex align-items-center">
-                <!--
-                <div class="text-white d-block d-md-none">
-                    <button class="" type="button" data-bs-toggle="offcanvas" data-bs-target="#burgermenu"
-                        aria-controls="offcanvasWithBothOptions"><ion-icon name="menu-outline"></ion-icon></button>
-
-                </div>
-                -->
-                <div class="logo">
-                    <a href="#" alt="Home" title="Home">
-                        <img src="./assets/logo.png" alt="logo AirBnb" class="h-100">
-                    </a>
-                </div>
-
+    <nav class="navbar navbar-expand-md bg-black">
+        <div class="container-fluid">
+            <a href="#" alt="Home" title="Home" class="navbar-brand">
+                <img src="./assets/logo.png" alt="logo AirBnb" class="logo">
+            </a>
+            <div class="collapse justify-content-center navbar-collapse" id="navbarSupportedContent">
+    
+                <ul class="navbar-nav mx-auto mb-2 mb-md-0 gap-5">
+                    <li class="nav-item"><a href="#" class="nav-link text-white">Place to stay</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">Experience</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">Online Experiences</a></li>
+                </ul>
+    
             </div>
-
-            <div class="d-flex align-items-center gap-4">
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <div class="d-flex align-items-center ">
-                        <ul class="d-flex gap-3 custom-list-nav mt-3">
-                            <li><a href="#">Place to stay</a></li>
-                            <li><a href="#">Experience</a></li>
-                            <li><a href="#">Online Experiences</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+    
             <!-- navbar right -->
-            <div class="text-white d-flex align-items-center gap-4 Black ">
-
-                <span>Become a host</span>
-
-                <ion-icon name="globe-outline"></ion-icon>
-
+            <div class="text-white d-flex align-items-center gap-4">
+    
+                <a href="#" class="nav-link text-white">Become a host</a>
+    
+                <a href="#" class="nav-link text-white d-flex"><ion-icon name="globe-outline"></ion-icon></a>
+    
                 <div
-                    class="bg-white rounded-5 gap-4 d-flex align-items-center justify-content-between text-dark gap-3 px-2 border-0">
-                    <button type="button" class="rounded-5 border-0 bg-white">
-                        <ion-icon name="menu-outline"></ion-icon>
-                        <img src="./assets/propic.png" alt="Seleziona il profilo" title="Seleziona il profilo"
-                            class="logo rounded-5">
-                    </button>
+                    class="bg-white rounded-5 gap-3 px-2 py-1 d-flex align-items-center justify-content-between text-dark border-0">
+    
+                    <ion-icon name="menu-outline"></ion-icon>
+                    <img src="./assets/propic.png" alt="Seleziona il profilo" title="Seleziona il profilo"
+                        class="user rounded-5">
+    
                 </div>
             </div>
         </div>
-
-        <div 
-            class="container d-flex align-items-center justify-content-between navbar-expand-lg px-4 rounded-5 text-dark bg-white">
-            <div class="text-dark rounded-5 bg-white d-flex flex-column">
-                <h5>Location</h5>
-                <input class="fs-6 border-0" type="text" placeholder="Where are you going?"></input>
-            </div>
-
-            <div class="text-dark rounded-5 bg-white d-flex flex-column">
-                <h5>Check-in</h5>
-                <input class="fs-6 border-0" type="date" id="check-in"></input>
-            </div>
-            <div class="text-dark rounded-5 bg-white d-flex flex-column">
-                <h5>Check-out</h5>
-                <input class="fs-6 border-0" type="date" id="check-out"></input>
-            </div>
-
-            <div class="text-dark rounded-5 bg-white d-flex flex-column">
-                <h5>Guest</h5>
-               <input class="fs-6 border-0" type="text" id="guest" placeholder="Add guest"></input>
-           </div>
-          
-           <div class="text-dark rounded-5 bg-danger d-flex align-items-center">
-                <a href="page2.html"><button type="button" class="rounded-5 border-0 bg-danger p-2">
-                    <ion-icon name="search-outline" size="large text-white"></ion-icon>
-                </button></a>
-           </div>
-        </div>
-
-<div class="container-fluid w-100 h-25 ">
-    <div class="row d-flex justify-content-center d-flex justify-content-end ">
-        <div class="col-12 col-md-10 background h-25">
-             <img  src="./assets/home.jpg " alt="">
-        </div>
-    </div>
     </nav>
 
+
+        
+
+        <div class="container-fluid w-100 px-0">
+            <div class="row">
+                <div class="col-12">
+                    <div class="home-img overflow-hidden position-relative">
+                        <img src="./assets/home.jpg " alt="" class="w-100 h-100 object-fit-cover">
+                        <div id="search-bar" class="position-absolute bg-white ps-3 pe-1 py-2 rounded-5 d-none d-md-flex align-items-center justify-content-between gap-3">
+                            <div class="text-dark d-flex flex-column">
+                                <div class="fw-bold">Location</div>
+                                <input class="fs-6 border-0" type="text" placeholder="Where are you going?"></input>
+                            </div>
+                
+                            <div class="text-dark d-flex flex-column">
+                                <div class="fw-bold">Check-in</div>
+                                <input class="fs-6 border-0" type="date" id="check-in"></input>
+                            </div>
+                            <div class="text-dark d-flex flex-column">
+                                <div class="fw-bold">Check-out</div>
+                                <input class="fs-6 border-0" type="date" id="check-out"></input>
+                            </div>
+                
+                            <div class="text-dark d-flex flex-column">
+                                <div class="fw-bold">Guest</div>
+                                <input class="fs-6 border-0" type="text" id="guest" placeholder="Add guest"></input>
+                            </div>
+                            <a href="page2.html" class="search-btn rounded-circle text-white p-3 d-flex align-items-center">
+                                        <ion-icon name="search-outline"></ion-icon>
+                            </a>
+                        </div>
+                        <div id="search-bar-mobile" class="mx-2 position-absolute bg-white w-100 rounded-5 px-3 py-1 d-flex d-md-none align-items-center justify-content-start gap-3">
+                            <div>
+                                <ion-icon name="search-outline"></ion-icon>
+                            </div>
+                            <div class="w-100">
+                                <div class="fw-bold">Dove si va?</div>
+                                <input type="text" placeholder="Ovunque • Qualunque settimana • Aggiungi ospiti" class="w-100 border-0">
+                            </div>
+                        </div>
+                        <div class="go-near text-white position-absolute">
+                            <h2 class="mb-0 pb-0">Go</h2>
+                            <h2 class="mt-0 pt-0">Near</h2>
+                            <button class="btn btn-light mt-2">Explore nearby stays</button> 
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
     <section class="container ">
-        <div class="row my-3">
+        <div class="row my-5 gy-3">
             <div class="box col-6 col-md-3 ">
                 <img src="./assets3/istockphoto-1366929777-612x612.jpg" alt="">
                 <div class="text">
-                    <h1>Genova</h1>
+                    <h5>Genova</h5>
                     <p>15 mins drive</p>
                 </div>
             </div>
             <div class="box  col-6 col-md-3">
                 <img src="./assets3/Old-Town.webp" alt="">
                 <div class="text">
-                    <h1>Inverness</h1>
+                    <h5>Inverness</h5>
                     <p>2hrs flight</p>
                 </div>
             </div>
             <div class="box  col-6 col-md-3">
                 <img src="./assets3/images.jpeg" alt="">
                 <div class="text">
-                    <h1>Edimburgh</h1>
+                    <h5>Edimburgh</h5>
                     <p>1.5hrs flight</p>
                 </div>
             </div>
             <div class="box  col-6 col-md-3">
                 <img src="./assets3/images (1).jpeg" alt="">
                 <div class="text">
-                    <h1>Rapallo</h1>
+                    <h5>Rapallo</h5>
                     <p>2hrs drive</p>
                 </div>
             </div>
@@ -130,33 +132,118 @@
             <div class="box  col-6 col-md-3">
                 <img src="./assets3/Old-Town.webp" alt="">
                 <div class="text">
-                    <h1>Milan</h1>
+                    <h5>Milan</h5>
                     <p>1.5hrs drive</p>
                 </div>
             </div>
             <div class="box  col-6 col-md-3">
                 <img src="./assets3/images.jpeg" alt="">
                 <div class="text">
-                    <h1>Montecarlo</h1>
+                    <h5>Montecarlo</h5>
                     <p>2hr drive</p>
                 </div>
             </div>
             <div class="box  col-6 col-md-3">
                 <img src="./assets3/images (1).jpeg" alt="">
                 <div class="text">
-                    <h1>Kirkwall</h1>
+                    <h5>Kirkwall</h5>
                     <p>1hr drive</p>
                 </div>
             </div>
             <div class="box  col-6 col-md-3">
                 <img src="./assets3/images (1).jpeg" alt="">
                 <div class="text">
-                    <h1>Nordkapp</h1>
+                    <h5>Nordkapp</h5>
                     <p>10hrs flight</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <footer class="d-none d-md-block mt-5 text-secondary">
+        <div class="container">
+            <div class="row p-4">
+                <div class="col-4">
+                    <div class="fw-bold lh-lg">Assistenza</div>
+                    <ul class="list-unstyled lh-lg">
+                        <li>Centro Assistenza</li>
+                        <li>AirCover</li>
+                        <li>Antidiscriminazione</li>
+                        <li>Supporto alla disabilità</li>
+                        <li>Opzioni di cancellazione</li>
+                        <li>Segnala problema nel quartiere</li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <div class="fw-bold lh-lg">Ospitare</div>
+                    <ul class="list-unstyled lh-lg">
+                        <li>Apri un Airbnb</li>
+                        <li>AirCover per gli host</li>
+                        <li>Risorse per gli host</li>
+                        <li>Forum della community</li>
+                        <li>Ospitare responsabilmente</li>
+                        <li>Partecipa a una lezione gratuita sull'ospitalità</li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <div class="fw-bold lh-lg">Airbnb</div>
+                    <ul class="list-unstyled lh-lg">
+                        <li>Newsroom</li>
+                        <li>Nuove funzionalità</li>
+                        <li>Opportunità di lavoro</li>
+                        <li>Investitori</li>
+                        <li>Gift card</li>
+                        <li>Soggiorni con Airbnb.org</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="d-flex justify-content-between align-items-baseline">
+                    <ul id="footer-nav" class="d-flex align-items-center list-unstyled">
+                        <li class="text-secondary">©2024 Epibnb, Inc.</li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-secondary">Privacy</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-secondary">Termini</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-secondary">Mappa del sito</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-secondary">Dettagli dell'azienda</a>
+                        </li>
+                    </ul>
+                    <ul class="d-flex align-items-center gap-3 list-unstyled">
+                        <li class="d-flex align-items-center gap-1">
+                            <i class="bi bi-globe2"></i>
+                            <div>Italiano (IT)</div>
+                        </li>
+                        <li class="d-flex align-items-center gap-1">
+                            <i class="bi bi-currency-euro"></i>
+                            <div>EUR</div>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-secondary">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-secondary">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-secondary">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

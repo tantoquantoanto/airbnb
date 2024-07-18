@@ -7,28 +7,28 @@ const stays = [
         description: 'Wonderful House'
     },
     {
-        score: '',
+        score: 0,
         rating: 0,
         img: './assets2/pexels2.jpg',
         title: 'Apartment • Genova',
         description: 'Wonderful House'
     },
     {
-        score: '',
+        score: 0,
         rating: 0,
         img: './assets2/pexels3.jpg',
         title: 'Apartment • Genova',
         description: 'Wonderful House'
     },
     {
-        score: '',
+        score: 0,
         rating: 0,
         img: './assets2/pexels4.jpg',
         title: 'Apartment • Genova',
         description: 'Wonderful House'
     },
     {
-        score: '',
+        score: 0,
         rating: 0,
         img: './assets2/pexels5.jpg',
         title: 'Apartment • Genova',
@@ -42,28 +42,28 @@ const stays = [
         description: 'Wonderful House'
     },
     {
-        score: '',
+        score: 0,
         rating: 0,
         img: './assets2/pexels2.jpg',
         title: 'Apartment • Genova',
         description: 'Wonderful House'
     },
     {
-        score: '',
+        score: 0,
         rating: 0,
         img: './assets2/pexels3.jpg',
         title: 'Apartment • Genova',
         description: 'Wonderful House'
     },
     {
-        score: '',
+        score: 0,
         rating: 0,
         img: './assets2/pexels4.jpg',
         title: 'Apartment • Genova',
         description: 'Wonderful House'
     },
     {
-        score: '',
+        score: 0,
         rating: 0,
         img: './assets2/pexels5.jpg',
         title: 'Apartment • Genova',
@@ -118,15 +118,15 @@ const createRatingDiv = (cardData, container) => {
     iconStar.setAttribute("name", "star");
     iconStar.setAttribute("class", "text-danger")
 
-    const cardTitle = document.createElement("p");
-    cardTitle.innerText = cardData.score;
-    cardTitle.setAttribute("class", "card-title m-0 fw-bold");
+    const cardScore = document.createElement("p");
+    cardData.score === 0 ? cardScore.innerText = "" : cardScore.innerText = cardData.score;
+    cardScore.setAttribute("class", "card-title m-0 fw-bold");
 
     const ratingCard = document.createElement("p");
     cardData.rating === 0 ? ratingCard.innerText = `0 ratings` : ratingCard.innerText = `• ${cardData.rating} ratings`;
     ratingCard.setAttribute("class", "m-0")
 
-    container.append(iconStar, cardTitle, ratingCard);
+    container.append(iconStar, cardScore, ratingCard);
 }
 
 stays.forEach(stay => {
