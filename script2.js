@@ -1,83 +1,134 @@
-const arrayCards =  {
-    holidays: [{
-        title: 2.75,
-        rating:'· 4 ratings',
+const stays = [
+    {
+        score: 2.75,
+        rating: 4,
         img: './assets2/pexels1.jpg',
-        duration: 'Apartment · Genova',
+        title: 'Apartment • Genova',
         description: 'Wonderful House'
     },
-        {
-            title: '',
-            rating:'0 ratings',
-            img: './assets2/pexels2.jpg',
-            duration: 'Apartment · Genova',
-            description: 'Wonderful House'
-            
-            
-        },
-        {
-            title: '',
-            rating:'0 ratings',
-            img: './assets2/pexels3.jpg',
-            duration: 'Apartment · Genova',
-            description: 'Wonderful House'
-       
-        },
-        {
-            title: '',
-            rating:'0 ratings',
-            img: './assets2/pexels4.jpg',
-            duration: 'Apartment · Genova',
-            description: 'Wonderful House'
-            
-        },
-        {
-        title: '',
-        rating:'0 ratings',
-        img: './assets2/pexels5.jpg',
-        duration: 'Apartment · Genova',
+    {
+        score: '',
+        rating: 0,
+        img: './assets2/pexels2.jpg',
+        title: 'Apartment • Genova',
         description: 'Wonderful House'
-        
-        },
-    ]
-}
+    },
+    {
+        score: '',
+        rating: 0,
+        img: './assets2/pexels3.jpg',
+        title: 'Apartment • Genova',
+        description: 'Wonderful House'
+    },
+    {
+        score: '',
+        rating: 0,
+        img: './assets2/pexels4.jpg',
+        title: 'Apartment • Genova',
+        description: 'Wonderful House'
+    },
+    {
+        score: '',
+        rating: 0,
+        img: './assets2/pexels5.jpg',
+        title: 'Apartment • Genova',
+        description: 'Wonderful House'
+    },
+    {
+        score: 2.75,
+        rating: 4,
+        img: './assets2/pexels1.jpg',
+        title: 'Apartment • Genova',
+        description: 'Wonderful House'
+    },
+    {
+        score: '',
+        rating: 0,
+        img: './assets2/pexels2.jpg',
+        title: 'Apartment • Genova',
+        description: 'Wonderful House'
+    },
+    {
+        score: '',
+        rating: 0,
+        img: './assets2/pexels3.jpg',
+        title: 'Apartment • Genova',
+        description: 'Wonderful House'
+    },
+    {
+        score: '',
+        rating: 0,
+        img: './assets2/pexels4.jpg',
+        title: 'Apartment • Genova',
+        description: 'Wonderful House'
+    },
+    {
+        score: '',
+        rating: 0,
+        img: './assets2/pexels5.jpg',
+        title: 'Apartment • Genova',
+        description: 'Wonderful House'
+    },
+]
 
 
-const divSection = document.getElementById("cards-container");
 
-const createCard = (cardData, divToAppend) => {
+const cardsContainer = document.getElementById("cards-container");
+const resultQt = document.getElementById("result-number");
+
+resultQt.innerText = `${stays.length} stays`;
+
+const createCard = (cardData, container) => {
     const card = document.createElement("div");
     card.setAttribute("class", "card border-0");
+
     const cardImg = document.createElement("img");
     cardImg.setAttribute("class", "card-img-top rounded-4 object-fit-cover");
-    cardImg.setAttribute("src", cardData.img);
+    cardImg.src = cardData.img
+
     const cardBody = document.createElement("div");
-    cardBody.setAttribute("class", "card-body p-0 pt-1 border-0");
-    const divStarTitle = document.createElement("div");
-    divStarTitle.setAttribute("class", "d-flex gap-2 align-items-center");
-    const iconStar = document.createElement("ion-icon")
-    iconStar.setAttribute("name","star");
-    iconStar.setAttribute("class", "text-danger")
-    const cardTitle = document.createElement("p");
-    cardTitle.innerText = cardData.title;
-    cardTitle.setAttribute("class", "card-title m-0 fw-bold");
-    const ratingCard = document.createElement("p");
-    ratingCard.textContent = cardData.rating;
-    ratingCard.setAttribute("class", "m-0")
-    const durationP = document.createElement("p");
-    durationP.textContent = cardData.duration;
-    durationP.setAttribute("class", "mb-0")
-    const descriptionCard = document.createElement("p");
-    descriptionCard.textContent = cardData.description;
-    divStarTitle.append(iconStar, cardTitle, ratingCard);
-    cardBody.append(divStarTitle, durationP, descriptionCard);
+    cardBody.setAttribute("class", "card-body pt-1 border-0");
+    createCardBody(cardData, cardBody)
+
     card.append(cardImg, cardBody);
-    divToAppend.appendChild(card);
+    container.appendChild(card);
+
     card.addEventListener("click", () => {
-        window.location.href = "page3.html"
+        window.location.href = "page3.html";
     })
 }
 
-arrayCards.holidays.forEach(card => {
-    createCard(card, divSection)
+const createCardBody = (cardData, container) =>{
+    const ratingDiv = document.createElement("div");
+    ratingDiv.setAttribute("class", "d-flex gap-2 align-items-center");
+    createRatingDiv(cardData, ratingDiv);
+
+    const titleP = document.createElement("p");
+    titleP.textContent = cardData.title;
+    titleP.setAttribute("class", "mb-0");
+
+    const descriptionCard = document.createElement("p");
+    descriptionCard.textContent = cardData.description;
+    
+    container.append(ratingDiv, titleP, descriptionCard);
+}
+
+const createRatingDiv = (cardData, container) => {
+    const iconStar = document.createElement("ion-icon")
+    iconStar.setAttribute("name", "star");
+    iconStar.setAttribute("class", "text-danger")
+
+    const cardTitle = document.createElement("p");
+    cardTitle.innerText = cardData.score;
+    cardTitle.setAttribute("class", "card-title m-0 fw-bold");
+
+    const ratingCard = document.createElement("p");
+    cardData.rating === 0 ? ratingCard.innerText = `0 ratings` : ratingCard.innerText = `• ${cardData.rating} ratings`;
+    ratingCard.setAttribute("class", "m-0")
+
+    container.append(iconStar, cardTitle, ratingCard);
+}
+
+stays.forEach(stay => {
+    createCard(stay, cardsContainer)
 })
