@@ -55,7 +55,7 @@
 }
 
 h2 {
-    font-size: 1.5rem;
+/*     font-size: 1.5rem; */
 }
 
 .underTitle p::first-letter {
@@ -63,7 +63,7 @@ h2 {
 }
 
 .underTitle {
-    font-size: 14px;
+/*     font-size: 14px; */
 }
 
 
@@ -73,14 +73,14 @@ h2 {
 }
 
 .selectedHouseDetails h3{
-    font-size: 20px;
+/*     font-size: 20px; */
 }
 
 .selectedHouseDetails h5 {
-    font-size: 15px;
+/*     font-size: 15px; */
 }
 .selectedHouseDetails span {
-    font-size: 10px;
+/*     font-size: 10px; */
     color: grey;
 }
 
@@ -112,7 +112,7 @@ h2 {
 }
 
 .floatingFirstRow span:last-child {
-    font-size: .7rem;
+/*     font-size: .7rem; */
 }
 
 
@@ -169,7 +169,7 @@ input {
 }
 
 input[type="date"] {
-    font-size: 12px; /* Imposta la dimensione del font */
+/*     font-size: 12px; Imposta la dimensione del font */
     box-sizing: border-box;
 }    
 
@@ -188,7 +188,7 @@ input[type="date"]:first-of-type {
     background-color: 
     rgb(255, 56, 92)
     ;
-    font-size: 12px;
+/*     font-size: 12px; */
     font-weight: bold;
 }
 
@@ -208,16 +208,16 @@ input[type="date"]:first-of-type {
   
 
  .footerInputs h5{
-    font-size: 13px;
+/*     font-size: 13px; */
  }
 
  .footerReviews h6{
-  font-size: 13px;
+/*   font-size: 13px; */
   font-weight: bold;
  }
 
  .footerReviews p{
-    font-size: 11px;
+/*     font-size: 11px; */
     
    }
 

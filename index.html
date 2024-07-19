@@ -57,7 +57,8 @@
                         <div id="search-bar" class="position-absolute bg-white ps-3 pe-1 py-2 rounded-5 d-none d-md-flex align-items-center justify-content-between gap-3">
                             <div class="text-dark d-flex flex-column">
                                 <div class="fw-bold">Location</div>
-                                <input class="fs-6 border-0" type="text" placeholder="Where are you going?"></input>
+                                <input class="fs-6 border-0" placeholder="Where are you going?" id="searchInput" list="locations"></input>
+                                <datalist id="locations"></datalist>
                             </div>
                 
                             <div class="text-dark d-flex flex-column">
@@ -73,19 +74,20 @@
                                 <div class="fw-bold">Guest</div>
                                 <input class="fs-6 border-0" type="text" id="guest" placeholder="Add guest"></input>
                             </div>
-                            <a href="page2.html" class="search-btn rounded-circle text-white p-3 d-flex align-items-center">
+                            <btn id="search-btn" class="btn btn-danger search-btn rounded-circle text-white p-3 d-flex align-items-center">
                                         <ion-icon name="search-outline"></ion-icon>
-                            </a>
+                            </btn>
                         </div>
-                        <div id="search-bar-mobile" class="mx-2 position-absolute bg-white w-100 rounded-5 px-3 py-1 d-flex d-md-none align-items-center justify-content-start gap-3">
+                        <div id="search-bar-mobile" class="mx-2 position-absolute bg-white w-100 rounded-5 px-1 py-1 d-flex d-md-none align-items-center justify-content-start gap-3">
                             <div>
-                                <a href="page2.html"><ion-icon name="search-outline"></ion-icon></a>
+                                <btn id="search-btn-mobile" class="btn btn-light rounded-circle"><ion-icon name="search-outline"></ion-icon></btn>
                             </div>
                             <div class="w-100">
                                 <div class="fw-bold">Dove si va?</div>
-                                <input type="text" placeholder="Ovunque • Qualunque settimana • Aggiungi ospiti" class="w-100 border-0">
+                                <input type="text" placeholder="Ovunque • Qualunque settimana • Aggiungi ospiti" class="w-100 border-0" id="searchInputMobile" list="locations">
                             </div>
                         </div>
+                        
                         <div class="go-near text-white position-absolute">
                             <h2 class="mb-0 pb-0">Go</h2>
                             <h2 class="mt-0 pt-0">Near</h2>
@@ -250,7 +252,8 @@
         crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
+    <script src="./common.js"></script>
+    <script src="./home.js"></script>
 </body>
 
 </html>
