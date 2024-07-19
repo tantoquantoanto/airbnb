@@ -62,7 +62,8 @@ input {
 }
 
 .home-img {
-    height: 55dvh;
+    height: 70dvh;
+    
 }
 
 #search-bar {
@@ -72,6 +73,15 @@ input {
     left: 50%;
     transform: translateX(-50%);
     font-size: 12px;
+}
+
+#search-bar input {
+    outline: none;
+    
+}
+
+#search-bar input:hover {
+    cursor: pointer;
 }
 
 #search-bar-mobile {
@@ -97,18 +107,26 @@ input {
     .go-near {
         bottom: 5%;
     }
+    .go-near h2{
+        font-size: 10dvw;
+    }
 }
 
 .go-near h2 {
-    font-size: 6.5rem;
+    font-size:5rem;
     font-weight: 600;
     line-height: 85%;
     letter-spacing: 3%;
     font-family: "Poppins", sans-serif;
 }
 
-#search-bar-mobile ion-icon {
+#search-bar-mobile a {
     font-size: 30px;
+    color: grey;
+}
+
+#search-bar-mobile input {
+    outline: none;
 }
 
 footer {
